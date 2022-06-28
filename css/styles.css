@@ -8,19 +8,29 @@ header{
     text-align: center;
     font-size: 3rem;
     background-color: white;
+    grid-area: header;
 }
 
 body{
     background-image: url(../images/fondo-gt.jpg);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20vh 20vh 60vh 20vh;
+    grid-template-areas: "header header"
+    "navbar navbar "
+    "article aside"
+    "footer footer";
 }
 
 .navbar{
     width: 80%;
     margin: auto;
     padding: 35px 0;
-    text-align: center;
+    text-align: right;
     justify-content: space-between;
     background-color: black;
+    grid-area: navbar;
+    
 }
 
 .navbar ul li {
@@ -55,3 +65,27 @@ body{
     width: 100%;
 }
 
+aside{
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-area: aside;
+    background-color: black;
+    color: white;
+}
+
+article{
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    grid-area: article;
+    background-color: white;
+}
+
+footer{
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-area: footer;
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin-top: 15px;
+}
