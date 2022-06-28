@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 3rem;
+    background-color: white;
+}
+
+body{
+    background-image: url(../images/fondo-gt.jpg);
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    text-align: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    background-color: black;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+}
+
